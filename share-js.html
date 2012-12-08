@@ -19,6 +19,9 @@
 		console.log('setting to '+newLink);
 		$("link[rel='canonical']").attr('href', newLink );
 		console.log( $("link[rel='canonical']").attr('href') );
+
+		addthis.button("#btn1", addthis_ui_config, addthis_share_config);
+		addthis.toolbox(".addthis_toolbox", null, null);// addthis_ui_config, addthis_share_config);
 	}
 </script>
 
@@ -31,9 +34,9 @@
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js&domready=1"></script>
 -->
 
-<a class="addthis_button"></a>
+<a class="addthis_button">simplest button</a>
 <br />
-<a id="btn1">Addthis share through javascript</a>
+<a id="btn1">(btn1) Addthis share through javascript</a>
 <br />
 
 <div class="addthis_toolbox addthis_default_style ">
@@ -61,8 +64,6 @@ var addthis_share_config =
     height: "340",
     screenshot: "http://i4.ytimg.com/vi/Py_-3di1yx0/default.jpg"
 }
-addthis.button("#btn1", addthis_ui_config, addthis_share_config);
-addthis.toolbox(".addthis_toolbox", addthis_ui_config, addthis_share_config);
 </script>
 
 </body>
