@@ -13,7 +13,7 @@
 
 <body>
 
-<input type="text"></input><input type="button" onclick="alert( $(link[rel='canoncial']) ); value="set canoncial"></input>
+<input id='can' type="text"></input><input type="button" onclick="console.log('aha'); $(link[rel='canoncial']).attr('rel', $('#can').val() );" value="set canoncial"></input>
 
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50ad205219fbe681&domready=1"></script>
 <!--
