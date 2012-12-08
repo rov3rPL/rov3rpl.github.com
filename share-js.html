@@ -14,7 +14,9 @@
 <body>
 <script type="text/javascript">
 	function changeCanonicalLink(newLink) {
+		console.log( $("link[rel='canonical']").attr('rel') );
 		$("link[rel='canonical']").attr('rel', $('#can').val() );
+		console.log( $("link[rel='canonical']").attr('rel') );
 	}
 </script>
 
