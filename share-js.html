@@ -14,20 +14,19 @@
 <!--
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js&domready=1"></script>
 -->
-<a id="btn1">Addthis share through javascript</a>
-<br />
-<a class="addthis_button" addthis:url="http://www.reddit.com/"
-        addthis:title="tytylek" fb:like:href="http://www.google.com"
+
+<a class="addthis_button"
+	addthis:url="http://www.reddit.com/" addthis:title="tytylek" fb:like:href="http://www.google.com"
 ></a>
 <br />
+<a id="btn1">Addthis share through javascript</a>
+<br />
+
 <div class="addthis_toolbox addthis_default_style ">
             <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
             <a class="addthis_button_tweet"></a>
-            <a class="addthis_button_pinterest_pinit"></a>
-            <br />
-            <a class="addthis_counter addthis_pill_style"></a>
-            <br />
-            <a id="zilord" class="addthis_button"></a>
+            <a class="addthis_button_pinterest_pinit"></a>            
+            <a class="addthis_counter addthis_pill_style"></a>            
 </div>
 
 <script type="text/javascript">
@@ -38,17 +37,18 @@ var addthis_ui_config =
 var addthis_share_config = 
 {
     url: "http://www.onet.pl/",
-    iframeurl: "http://www.youtube.com/",
-    href: "http://www.bing.com/",
+    //iframeurl: "http://www.youtube.com/",
+    
+    //href: "http://www.bing.com/",
     title: "Piff paff",
     description: "po to sa literki, zeby ich uzywac",
-    //swfurl: "http://www.youtube.com/v/JRWox-i6aAk&hl=en&fs=1",
-    //width: "560",
-    //height: "340",
+    swfurl: "http://www.youtube.com/v/JRWox-i6aAk&hl=en&fs=1",
+    width: "560",
+    height: "340",
     screenshot: "http://i4.ytimg.com/vi/JRWox-i6aAk/default.jpg"
 }
 addthis.button("#btn1", addthis_ui_config, addthis_share_config);
-addthis.button("#zilord", addthis_ui_config, addthis_share_config);
+addthis.toolbox(".addthis_toolbox", addthis_ui_config, addthis_share_config);
 </script>
 
 </body>
