@@ -15,6 +15,11 @@
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js&domready=1"></script>
 -->
 <a id="btn1">Addthis share through javascript</a>
+<br />
+<a id="btn2" class="addthis_share_facebook" addthis:url="http://example.com"
+        addthis:title="An Example Title"
+></a>
+
 <script type="text/javascript">
 var addthis_ui_config =
 {
@@ -31,6 +36,7 @@ var addthis_share_config =
     screenshot: "http://i4.ytimg.com/vi/JRWox-i6aAk/default.jpg"
 }
 addthis.button("#btn1", addthis_ui_config, addthis_share_config);
+addthis.button("#btn2", addthis_ui_config, addthis_share_config);
 </script>
 
 </body>
