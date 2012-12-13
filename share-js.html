@@ -28,8 +28,12 @@
 		
 		addthis.update();
 	}
+	function setSocial() {
+		$("#social").attr("addthis:url", $("#address").val());
+		//addthis.button("#social");
+		addthis.update("#social");
+	}
 </script>
-
 
 <input id='can' type="text" />
 <input type="button" onclick="changeCanonicalLink( $('#can').val() );" value="set canoncial" />
@@ -43,12 +47,17 @@
 
 <br />
 
+<div id="social">
 <div class="addthis_toolbox addthis_default_style ">
             <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
             <a class="addthis_button_tweet"></a>
             <a class="addthis_button_pinterest_pinit"></a>
             <a class="addthis_counter addthis_pill_style" addthis:url="http://rov3rpl.github.com/sample.html"></a>
 </div>
+</div>
+
+<input id='address' type="text" />
+<input type="button" onclick="setSocial( );" value="address" />
 
 <script type="text/javascript">
 var addthis_ui_config =
