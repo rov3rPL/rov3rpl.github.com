@@ -24,13 +24,12 @@
 		//addthis.toolbox(".addthis_toolbox");// addthis_ui_config, addthis_share_config);
 		//addthis.update();
 		$("#sb").attr("addthis:url", newLink);
-		addthis.button("#sb");
-		
+		addthis.button("#sb");		
 		addthis.update();
 	}
 	function setSocial() {
 		$("#social").attr("addthis:url", $("#address").val());
-		addthis.button("#social");
+		addthis.toolbox("#social");
 		addthis.update("#social");
 	}
 </script>
