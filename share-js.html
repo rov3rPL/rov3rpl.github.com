@@ -29,8 +29,11 @@
 	}
 	function setSocial() {
 		$("#social").attr("addthis:url", $("#address").val());
-		addthis.toolbox("#social");
-		addthis.update("#social");
+		//addthis.toolbox("#social");
+		//addthis.update("#social");
+		addthis.toolbox();
+		addthis.update();
+		addthis.ready();
 	}
 </script>
 
