@@ -14,6 +14,7 @@
 
 <body>
 <script type="text/javascript">
+
 	function changeCanonicalLink(newLink) {
 		console.log( $("link[rel='canonical']").attr('href') );
 		console.log('setting to '+newLink);
@@ -29,21 +30,25 @@
 	}
 	function setSocial() {
 		$("#social").attr("addthis:url", $("#address").val());
+		addthis.ost = 0;
+		addthis.update('share', 'url', $("#address").val()); // new url
+	        //addthis.update('share', 'title', window.document.title); // new title.
+	        addthis.ready(); // this will re-render the buttons.
 		//addthis.toolbox("#social");
 		//addthis.update("#social");
-		addthis.toolbox();
-		addthis.update();
-		addthis.ready();
+		//addthis.toolbox();
+		//addthis.update();
+		//addthis.ready();
 	}
 </script>
 
 <input id='can' type="text" />
 <input type="button" onclick="changeCanonicalLink( $('#can').val() );" value="set canoncial" />
-
-<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50ad205219fbe681&domready=1"></script>
 <!--
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js&domready=1"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#async=1"></script>
 -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js&domready=1"></script>
+
 
 <a id="sb" class="addthis_button" addthis:url="http://rov3rpl.github.com/" >simplest button</a>
 
