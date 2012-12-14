@@ -47,9 +47,7 @@
 	    if ( window.addthis ) {
 	        delete window.addthis;
 	    }
-	    $.getScript( script );
-	    window.addthis.init('#social');
-	    }
+	    $.getScript( script, function() { window.addthis.init('#social'); } );
 	}
 </script>
 
