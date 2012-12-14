@@ -41,6 +41,16 @@
 		//addthis.update();
 		//addthis.ready();
 	}
+	
+	function getScript() {
+	    var script = 'http://s7.addthis.com/js/250/addthis_widget.js#domready=1';
+	    if ( window.addthis ) {
+	        delete window.addthis;
+	    }
+	    $.getScript( script );
+	    window.addthis.init('#social');
+	    }
+	}
 </script>
 
 <input id='can' type="text" />
@@ -75,16 +85,6 @@
 <input type="button" onclick="getScript();" value="addthis get script" />
 
 <script type="text/javascript">
-function getScript() {
-    var script = 'http://s7.addthis.com/js/250/addthis_widget.js#domready=1';
-    if ( window.addthis ) {
-        delete window.addthis;
-    }
-    $.getScript( script );
-    window.addthis.init();
-    }
-}
-
 var addthis_ui_config =
 {
     services_compact: 'facebook, myspace, igoogle, netvibes, windows, dashboard, more'
