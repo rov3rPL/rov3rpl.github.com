@@ -18,7 +18,7 @@
     </layout>
     <!--adresy url paneli-->
     <urls>
-      <add key="mainPanelUrl" value="http://www.onet.pl"/>
+      <add key="mainPanelUrl" value="http://rov3rpl.github.com/IK/page.html"/>
       <add key="leftUpperPanelUrl" value="http://rov3rpl.github.com/IK/page1.html"/>
       <add key="leftDownPanelUrl" value="http://rov3rpl.github.com/IK/page2.html"/>
       <add key="middleUpperPanelUrl" value="http://rov3rpl.github.com/IK/page5.html"/>
