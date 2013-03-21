@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="utf-8" ?>
+ï»¿<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-  <!--okres odpytywania o konfiguracjê-->
+  <!--okres odpytywania o konfiguracjÄ™-->
   <add key="reconfigureTime" value="300"/>
-  <!--okres bezczynnoœci-->
+  <!--okres bezczynnoÅ›ci-->
   <add key="idleTime" value="30"/>
-  <!--godzina wy³¹czenia komputera-->
+  <!--godzina wyÅ‚Ä…czenia komputera-->
   <add key="shutdownTime" value="19:10" />
   <panels>
-    <!--szerokoœci paneli-->
+    <!--szerokoÅ›ci paneli-->
     <layout>
       <add key="downHorizontalSplitSize" value="5"/>
-      <add key="leftVerticalSplitSize" value="25"/>
-      <add key="rightVerticalSplitSize" value="25"/>
-      <add key="leftHorizontalSplitSize" value="50"/>
-      <add key="rightHorizontalSplitSize" value="50"/>
-      <add key="middleHorizontalSplitSize" value="30"/>
+      <add key="leftVerticalSplitSize" value="19.9"/>
+      <add key="rightVerticalSplitSize" value="19.9"/>
+      <add key="leftHorizontalSplitSize" value="33.3"/>
+      <add key="rightHorizontalSplitSize" value="66.6"/>
+      <add key="middleHorizontalSplitSize" value="33.3"/>
     </layout>
     <!--adresy url paneli-->
     <urls>
-      <add key="mainPanelUrl" value="http://www.whatismybrowser.com/"/>
-      <add key="leftUpperPanelUrl" value="http://jsfiddle.net/k29Fp/1/show/"/>
-      <add key="leftDownPanelUrl" value="http://jsfiddle.net/UfCZJ/show/"/>
-      <add key="middleUpperPanelUrl" value="http://jsfiddle.net/r6UGD/show/"/>
-      <add key="rightUpperPanelUrl" value="http://jsfiddle.net/nxwx9/show/"/>
-      <add key="rightDownPanelUrl" value="http://jsfiddle.net/XPfq4/3/show/"/>
+      <add key="mainPanelUrl" value="http://rov3rpl.github.com/IK/page.html"/>
+      <add key="leftUpperPanelUrl" value="http://rov3rpl.github.com/IK/page1.html"/>
+      <add key="leftDownPanelUrl" value="http://rov3rpl.github.com/IK/page2.html"/>
+      <add key="middleUpperPanelUrl" value="http://rov3rpl.github.com/IK/page5.html"/>
+      <add key="rightUpperPanelUrl" value="http://rov3rpl.github.com/IK/page3.html"/>
+      <add key="rightDownPanelUrl" value="http://rov3rpl.github.com/IK/page4.html"/>
     </urls>
   </panels>
   <!--domeny zablokowane-->
@@ -33,6 +33,6 @@
 	  <domain>www.redtube.com</domain>
 	  <domain>www.xvideos.com</domain>
   </blacklist>
-  <!--has³o odblokowuj¹ce infokiosk, MD5? SHA1?-->
+  <!--hasÅ‚o odblokowujÄ…ce infokiosk, MD5? SHA1?-->
   <add key="unblock" value="pelikan"/>
 </configuration>
